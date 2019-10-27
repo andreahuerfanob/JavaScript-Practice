@@ -1,9 +1,68 @@
-// function printInt(n) = prints all natural numbers 1 to n & prints them in console:
+// ex 1
+function printInt(n) = prints all natural numbers 1 to n & prints them in console:
 function printInt(n) {
   for (var x = 1; x <= n; x++) {
     console.log(x);
   }
 }
+
+// ex 2 
+// printIntRev: takes n parameter & prints natural numbers in reverse 
+// start: n
+// stop: 1
+// decrement 1
+function printIntReverse(n){
+  for(var x= n; x>= 1; 1--){
+      console.log(i);
+  }
+  }
+  printIntReverse()
+
+ 
+//ex 3: 
+  //function takes x:
+  // if x = # returns string= 'number' 
+  // if x = string returns 'string'
+  // if x = boolean , returns 'boolean'
+  // otherwise: returns -1
+  function checkInput(x){
+    if(typeof x === "number" ) {
+        return "number";
+    } 
+    else if(typeof x === "string"){ 
+        return "string";
+    }
+    else if(typeof x === "boolean"){ 
+        return "boolean";
+    }
+    else if(typeof x === ) {}
+    else {return -1
+    }
+        return -1;
+    }
+
+
+//switch way: 
+switch (typeof x){
+    case "number":
+        return "number";
+    case "string":
+        return "string";
+    case "boolean":
+        return "boolean";
+    default:
+        return -1;
+    }
+// 3rd solution
+var type = typeof x;
+if (
+    type === "number" ||
+    type === "string"
+    type === "boolean"
+    ? type : -1;
+
+) 
+
 
 // Ex 4
 // function simpleEvenAdding(num) takes a #, adds up all even #s from 1 to # & returns:
@@ -91,6 +150,48 @@ var min = parseInt(num % 60);
 return hour + ":" + min;
 }
 console.log(timeConvert(1000));
+
+// ex 9
+//function findStr(str, long) 
+//takes two strings as parameters 
+// return how many str you can find in long.
+//Assume Str is not empty string.
+//Hint: loop through the long, to check if there is any str
+function findStr(str, long) {
+  // solution 1 
+  var longlength = long.length;
+  var strLength = str.length;
+  // counter: count  the # of str in long 
+  var counter = 0;
+  for(var i=0; i< long.length - strLength; i++) {
+      if (str === long.slice(i, i + str.length)) {
+          counter++;
+      }
+  }
+}
+console.log(findStr("hi", "dasdhidasdahidashi"));
+
+
+// ex 10
+// function selfDividingNumbers(left, right) 
+// taking two number bound as parameters 
+// returns an array of every possible self dividing number between them, including the bounds. 
+
+function selfDividingNumbers(left, right) {
+// llop from left to right 
+var solution = [];
+for(var i= left; i <= right; I++) {
+// check if # is self dividing #
+if (i is selfDividingNumbers){
+  solution.push(i);
+}
+}
+return solution;
+}
+function checkselfDividing(num){
+
+}
+
 // ex 11
 // function moveZeros(nums) 
 //takes  array of numbers and 
@@ -115,6 +216,7 @@ function moveZeros(nums){
   }
   return solution;
 }
+
 // ex 12
 //average(nums) function //calculates:  average of an array of numbers.
 function average(nums){
